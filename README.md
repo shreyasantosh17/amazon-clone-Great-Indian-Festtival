@@ -1,6 +1,6 @@
 # Amazon-Clone
 <hr>
-https://avanimathur.github.io/Amazon-Clone/
+[https://avanimathur.github.io/Amazon-Clone/](https://amazon-clone-greatindianfestival.netlify.app)
 <br>
 This project is a replica of the front-end of the popular e-commerce platform Amazon. 
 <br>
