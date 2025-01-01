@@ -1,117 +1,140 @@
 html, body{
     margin: 0;
-    overflow-x: hidden;   
+    padding: 0;
     background-color: rgb(236, 234, 234);
     font-family: 'Montserrat',sans-serif;
+    overflow-x: hidden;
 }
 
-.upper-header{
+#navbar{
     background-color: #131A22;
-    width: 100vw;
-    padding-bottom: 1.5rem;
-    height:8vh;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.logo{
-    display: inline-block;
 
+.amazon-logo{
+    width: 110px;
+    height: 35px;
+    margin-left: 20px;
 }
-.logo img{
-    width: 7vw;
-    height:5vh;
-    margin-top: 1rem;
-    margin-left: 2rem;
+
+.amazon-logo:hover{
+    outline: 0.5px solid white; 
+    outline-offset: 10px; 
 }
+
 .location{
     color: white;
-    display: inline-block;
-    margin-left: 2rem;
 }
+
 .location:hover{
     outline: 0.5px solid white; 
     outline-offset: 10px; 
 }
+
 .location-name{
     font-size: 0.85rem;
 }
+
 .update-location{
     font-size: 0.9rem;
     font-weight: bold;
 }
+
 .search-bar{
-    display: inline-block;  
-    margin-left: 2rem;
+    display: flex;
     align-items: center;
 }
-.select-type:hover{
-    outline: 3px solid rgb(236, 147, 31); 
-    outline-offset: -1px; 
-}
+
 .select-type{
     background-color: white;
-    height: 1.8rem;
-    width:3.5rem;
+    height: 2.5rem;
+    width: 4rem;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-top: 3px;
 }
+
+.select-type:hover {
+    background-color: #cbcbcb;
+    transition: background-color 0.3s ease;
+}
+
 .input-search{
-    height: 1.5rem;
-    width: 30vw;
-    margin-left: -0.1rem;
+    height: 2.3rem;
+    width: 45vw;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding-left: 10px;
 }
+
+.input-search:hover {
+    background-color: rgb(220, 220, 220);
+    transition: background-color 0.3s ease;
+}
+
 .search-icon{
+    margin-top: 3px;
     background-color: rgb(236, 147, 31);
-    padding: 0.37rem 1rem;
-    border-radius: 3px;
-    margin-left:-0.3rem ;
-    margin-bottom: -4rem;
+    padding: 0.65rem 1rem;
+    border-radius: 5px;
 }
+
 .search-icon:hover{
-    filter: brightness(90%);
+    filter: brightness(80%);
   
 }
-.language{
-    display: inline-block;
-    margin-left: 1.5rem;
+
+.language-list{
+    background-color: #121d2a;
+    color: white;
+    height: 2rem;
+    font-weight: bold;
+    outline: none;
+    border: none;
 }
+
 .language:hover{
     outline: 0.5px solid white; 
     outline-offset: 10px; 
 }
-.language-list{
-    background-color: #131A22;
-    color: white;
-    height: 2rem;
-    border: none;
-    font-weight: bold;
 
-}
-.sign-in{
-    display:inline-block;
+.sign-in{  
+    display: grid;
     color: #fff;
-    margin-left: 0.7rem;
 }
+
 .sign-in:hover{
     outline: 0.5px solid white; 
     outline-offset: 8px; 
 }
+
 .sign-head{
-    margin-top: 2rem;
-    font-size:0.9rem;
+    font-size : 12px;;
 }
-.sign-line{
-    font-size: 0.9rem;
+
+.sign-bottom{
+    font-size: 14px;
     font-weight: bold;
 }
+
 .account{
     display: inline-block;
     margin-left: 2rem;
     color: white;
 }
+
 .account:hover{
     outline: 0.5px solid white; 
     outline-offset: 10px; 
 }
+
 .cart{
-    display: inline-block;
-    margin-left: 1.5rem;
+    height: 15px;
+    width: 35px;
     
     color: white;
     :hover{
@@ -123,97 +146,102 @@ html, body{
 .lower-header{
     display: flex;
     align-items: center;
-    background-color: #232F3E;
+    justify-content: space-between;
+    background-color: #2f3b4b;
     color: white;
-    padding: 1.2rem 0rem;
+    height: 40px;
+    width: 100%;
 }
+
 .lower-header-text{
     margin-left: 1rem;
+    margin-right: 1rem;
     font-size: 0.9rem;
     font-weight: bold;
 }
+
 .lower-header-text:hover {
     outline: 0.5px solid white; 
     outline-offset: 10px; 
 }
-.dropdown-content {
-    display: none;
-    position: absolute;
-    z-index: 1;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
+
+.carousel-container {
+    width: 100vw;
+    height: 45vh;
+    overflow: hidden;
+    position: relative;
 }
 
-.auto-carousel{
-    position: relative;
-    animation-name: slide;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    width: 100%;
+.auto-carousel {
     display: flex;
-    height: 40vh;
-    transition: all 1s ease;
-    margin-top: -0.5rem;
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+    animation: slide 25s infinite;
+    position: relative;
 }
-@keyframes slide{
-    0%{
-        left:0%;
-    }
-    5%{
-        left:-100%;
-    }
-    20%{
-        left:-100%;
-    }
-    25%{
-        left:-200%;
-    }
-    40%{
-        left:-200%; 
-    }
-    45%{
-        left:-300%;
-    }
-    60%{
-        left:-300%;
-    }
-    65%{
-        left:-400%; 
-    }
-    80%{
-        left:-400%;
-    }
-    85%{
-        left:-500%;
-    }
-    100%{
-        left:-500%;
-    }
-}
-.slide{
+
+.slide {
+    min-width: 100%; 
     height: 45vh;
 }
-.slide img{
-    height: 45vh;
-    width: 100vw;
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-ol{
-    list-style: none;
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    20% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    45% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    70% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    95% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(-400%);
+    }
+}
+
+#image{
+    border-radius: 5px;
 }
 
 .multi-img-sec{
     display: flex;
 }
+
 .multi-img{
     width: 30wv;
+    border-radius: 10px;
     background-color: white;
     margin: 1rem;
 }
+
 .multi-head{
     font-size: 1.2rem;
-margin-left: 1rem ;
+    margin-left: 1rem ;
 }
+
 .single-multi{
     width: 8vw;
     display: inline-block;
@@ -269,17 +297,19 @@ height: 6rem;
 }
 
 .single-img-sec{
+    display: flex;
+    justify-content: space-around;
     width: 100vw;
-    padding: 1rem;
-    margin-top: 1rem;
-    
+    margin-right: 40px; 
 }
 .single-img-box{
     display: inline-block;
     background-color: white;
     width: 20vw;
+    height: 50vh;
     margin: 1rem;
     text-align: center;
+    border-radius: 10px;
 }
 .single-img-head{
     font-size:1.5rem;
@@ -354,14 +384,8 @@ height: 6rem;
     margin-top: 0.6rem;
     font-size: medium;
 }
-.amazon-logo{
-    display: inline-block;
-    margin-top: 2rem;
-}
-.amazon-logo:hover{
-    outline: 0.5px solid white; 
-    outline-offset: -2px; 
-}
+
+
 
 .social-media,.about{
     color:#fff;
