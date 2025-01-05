@@ -66,12 +66,12 @@ html, body{
 }
 
 .input-search{
-    height: 2.5rem; /* Ensure same height */
+    height: 2.5rem;
     width: 45vw;
     background-color: #ffffff;
-    border-radius: 0; /* No rounded corners */
+    border-radius: 0;
     padding-left: 10px; 
-    border: none; /* Remove border */
+    border: none;
 }
 
 .input-search:hover {
