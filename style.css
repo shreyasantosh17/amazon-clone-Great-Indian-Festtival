@@ -50,13 +50,14 @@ html, body{
 }
 
 .select-type{
-    background-color: white;
-    height: 2.5rem;
-    width: 4rem;
-    border-radius: 5px;
-    padding-left: 15px;
+    background-color: lightgrey;
+    height: 2.6rem;
+    width: 3rem;
+    border-radius: 5px 0 0 5px;
+    padding-left: 5px;
     padding-top: 3px;
-    margin-right: 15px;
+    border: none;
+    margin-top: 0;
 }
 
 .select-type:hover {
@@ -65,11 +66,12 @@ html, body{
 }
 
 .input-search{
-    height: 2.3rem;
+    height: 2.5rem;
     width: 45vw;
     background-color: #ffffff;
-    border-radius: 5px;
-    padding-left: 10px;
+    border-radius: 0;
+    padding-left: 10px; 
+    border: none;
 }
 
 .input-search:hover {
@@ -78,11 +80,15 @@ html, body{
 }
 
 .search-icon{
-    margin-left: 15px;
-    margin-top: 3px;
+    margin-left: 0;
+    margin-top: 0.4px;
     background-color: rgb(236, 147, 31);
     padding: 0.65rem 1rem;
-    border-radius: 5px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    height: 1.3rem;
+    display: flex;
+    align-items: center;
 }
 
 .search-icon:hover{
