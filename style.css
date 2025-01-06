@@ -285,6 +285,7 @@ height: 6rem;
     top: 50%;
 }
 .slide-carousel{
+    scrollbar-width: none;
     display: flex;
     width: 100%;
     height: 100%;
@@ -319,7 +320,6 @@ height: 6rem;
 }
 .single-img{
     width: 15vw;
-
 }
 .see-more{
     margin-left: -10rem;
@@ -358,43 +358,84 @@ height: 6rem;
     font-weight: bold;
 }
 
-.footer{
-    width: 100vw;
-    background-color: #232F3E;
+.footer {
+    width: 100%;
+    background-color: #131A22;
     color: white;
     display: flex;
-    justify-content: center;
-    padding-bottom:5rem;
-    padding-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem 0;
+    text-align: center;
 }
-.info-footer{
-    width: 15vw;
-    margin-left: 5rem;
+
+.footer-head {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ff9900;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.list-footer li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.list-footer li a:hover {
+    color: #ff9900;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-icon {
+    color: white;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ff9900;
+    transform: scale(1.2);
+}
+
+.backtotop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232F3E;
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.backtotop:hover {
+    background-color: #37475A;
+}
+
+.info-footer {
     text-align: left;
 }
-.footer-head{
-    font-size: 1rem;
-    font-size: large;
-}
-.list-footer{
+
+.list-footer {
     list-style: none;
-    margin-left: -2.5rem;
-    font-size: medium;
-}
-.list-footer li{
-    font-size: 0.8rem;
-    margin-top: 0.6rem;
-    font-size: medium;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    text-align: left; 
 }
 
-
-
-.social-media,.about{
-    color:#fff;
-    font-size: medium;
-    text-decoration: none;
-}
-
-.social-media:hover , .about:hover{
-    text-decoration-line: underline;
+.list-footer li {
+    margin-bottom: 0.5rem;
 }

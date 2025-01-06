@@ -14,8 +14,7 @@ event.preventDefault();
 
 const toTopButton = document.querySelector('.backtotop');
 
-toTopButton.addEventListener('click', function(event) {
-    event.preventDefault();
+toTopButton.addEventListener('click', function () {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
