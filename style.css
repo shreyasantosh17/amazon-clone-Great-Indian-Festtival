@@ -337,6 +337,7 @@ body {
   height: 3rem;
   text-align: center;
   margin-top: 1rem;
+  cursor: pointer;
   color: white;
   transition: color 0.3s;
 }
