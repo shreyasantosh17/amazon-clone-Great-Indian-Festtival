@@ -390,6 +390,7 @@ body {
 
 .footer-column {
   margin: 10px;
+  text-align: justify;
 }
 .footer-column h3 {
   margin-bottom: 10px;
@@ -404,7 +405,7 @@ body {
 }
 .footer-column a:hover {
   text-decoration: underline;
-  color: #ff9900;
+  color: #a5a5a5;
 }
 
 .footer-bottom {
