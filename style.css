@@ -23,13 +23,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px; /* Add padding to the left and right for better spacing */
 }
 
 .amazon-logo {
   width: 110px;
   height: 35px;
-  margin-left: 0; /* Remove left margin for better alignment */
+  margin-left: 20px;
 }
 
 .amazon-logo:hover {
@@ -37,19 +36,11 @@ body {
   outline-offset: 10px;
 }
 
-.location,
-.account,
-.sign-in,
-.cart {
+.location {
   color: white;
-  margin: 0 15px; /* Add margin to the left and right for spacing */
-  display: inline-block;
 }
 
-.location:hover,
-.account:hover,
-.sign-in:hover,
-.cart:hover {
+.location:hover {
   outline: 0.5px solid white;
   outline-offset: 10px;
 }
@@ -66,19 +57,18 @@ body {
 .search-bar {
   display: flex;
   align-items: center;
-  flex-grow: 1; /* Allow search bar to grow and take up available space */
-  margin-right: 20px; /* Add some margin to the right */
 }
 
 .select-type {
-  background-color: lightgrey;
-  height: 2.6rem;
-  width: 4rem;
-  border-radius: 5px 0 0 5px;
-  padding-left: 15px;
-  padding-top: 3px;
-  border: none;
-  margin-right: 15px;
+  background-color: lightgrey;  
+  height: 2.6rem;  
+  width: 4rem;  
+  border-radius: 5px 0 0 5px; 
+  padding-left: 15px;  
+  padding-top: 3px; 
+  border: none;  
+  margin-right: 0px; 
+  margin-top: 0;  
 }
 
 .select-type:hover {
@@ -87,12 +77,12 @@ body {
 }
 
 .input-search {
-  height: 2.5rem;
-  width: 45vw;
-  background-color: #ffffff;
-  border-radius: 0;
-  padding-left: 10px;
-  border: none;
+  height: 2.5rem; 
+  width: 45vw; 
+  background-color: #ffffff; 
+  border-radius: 0; 
+  padding-left: 10px; 
+  border: none; 
 }
 
 .input-search:hover {
@@ -101,16 +91,17 @@ body {
 }
 
 .search-icon {
-  margin-left: 0;
-  margin-top: 0.4px;
-  background-color: rgb(236, 147, 31);
-  padding: 0.65rem 1rem;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-  height: 1.3rem;
+  margin-left: 0;  
+  margin-top: 0.4px; 
+  background-color: rgb(236, 147, 31);  
+  padding: 0.65rem 1rem;  
+  border-radius: 0 5px 5px 0;  
+  cursor: pointer;  
+  height: 1.4rem; 
   display: flex;
-  align-items: center;
+  align-items: center;  
 }
+
 
 .search-icon:hover {
   filter: brightness(80%);
@@ -163,12 +154,12 @@ body {
 .cart {
   height: 15px;
   width: 35px;
-  color: white;
-}
 
-.cart:hover {
-  outline: 0.5px solid white;
-  outline-offset: 10px;
+  color: white;
+  :hover {
+    outline: 0.5px solid white;
+    outline-offset: 10px;
+  }
 }
 
 .lower-header {
@@ -338,7 +329,6 @@ body {
   width: 100vw;
   margin-right: 40px;
 }
-
 .single-img-box {
   display: inline-block;
   background-color: white;
