@@ -6,7 +6,16 @@ body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
+        .lower-header .lower-header-text {
+            text-decoration: none; /* Removes underline */
+            color: white; /* Matches text color of other spans */
+            cursor: pointer; /* Changes cursor to pointer for links */
+}
 
+        .lower-header .lower-header-text:hover {
+              text-decoration: underline; /* Optional: Add underline on hover for all */
+}
+    
 #navbar {
   background-color: #131a22;
   height: 70px;
